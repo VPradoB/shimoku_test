@@ -105,19 +105,19 @@ piezas de ropa superior vs piezas de ropa inferior."""
         return [
             {
                 "name": "ropa superior",
-                "coste total": float(upper_clothes['precio_coste'].mean() * upper_clothes['unidades_vendidas'].sum()),
-                "ventas netas": float(upper_clothes['precio_venta'].sum() * upper_clothes['unidades_vendidas'].sum()),
-                "ganancias": float(upper_clothes['ganancia_total'].sum()),
-                "coste promedio": float(upper_clothes['precio_coste'].mean()),
-                "precio venta promedio": float(upper_clothes['precio_venta'].mean())
+                "coste total": round(float(upper_clothes['precio_coste'].mean() * upper_clothes['unidades_vendidas'].sum()), 2),
+                "ventas netas": round(float(upper_clothes['precio_venta'].sum() * upper_clothes['unidades_vendidas'].sum()), 2),
+                "ganancias": round(float(upper_clothes['ganancia_total'].sum()), 2),
+                "coste promedio": round(float(upper_clothes['precio_coste'].mean()), 2),
+                "precio venta promedio": round(float(upper_clothes['precio_venta'].mean()), 2)
             },
             {
                 "name": "ropa inferior",
-                "coste total": float(bottom_clothes['precio_coste'].mean() * bottom_clothes['unidades_vendidas'].sum()),
-                "ventas netas": float(bottom_clothes['precio_venta'].sum() * bottom_clothes['unidades_vendidas'].sum()),
-                "ganancias": float(bottom_clothes['ganancia_total'].sum()),
-                "coste promedio": float(bottom_clothes['precio_coste'].mean()),
-                "precio venta promedio": float(bottom_clothes['precio_venta'].mean()),
+                "coste total": round(float(bottom_clothes['precio_coste'].mean() * bottom_clothes['unidades_vendidas'].sum()), 2),
+                "ventas netas": round(float(bottom_clothes['precio_venta'].sum() * bottom_clothes['unidades_vendidas'].sum()), 2),
+                "ganancias": round(float(bottom_clothes['ganancia_total'].sum()), 2),
+                "coste promedio": round(float(bottom_clothes['precio_coste'].mean()), 2),
+                "precio venta promedio": round(float(bottom_clothes['precio_venta'].mean()), 2),
             },
         ]
 
