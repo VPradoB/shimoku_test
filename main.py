@@ -29,7 +29,7 @@ def delete_app(shimoku, app_name:str):
 def run():
     df = pd.read_csv('ventas.csv')
     s = connect_shimoku()
-    delete_app(s, 'dashboard')
+    # delete_app(s, 'test app')
 
     sales_reporter = SalesReporter(s, df)
     sales_reporter.report()
