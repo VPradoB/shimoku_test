@@ -1,6 +1,6 @@
 # Shimoku Dashboard SDK
 Shimoku is a company that provides a dashboard SDK for creating data visualizations. This SDK can be used with Python to create interactive dashboards from data.
-
+![dashboard shimoku](docs/dashboard.jpeg)
 ## Installation
 To use the Shimoku SDK, you will need to install it using pip:
 
